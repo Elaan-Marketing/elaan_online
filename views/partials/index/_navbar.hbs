@@ -1,0 +1,41 @@
+                  <ul class="site-menu js-clone-nav d-none d-lg-block">
+  <li class="has-children">
+    <a href="#">Buy</a>
+    <ul class="dropdown">
+      <li>
+        <a href="#">Shop</a>
+      </li>
+      <li>
+        <a href="#">Plot</a>
+      </li>
+      <li>
+        <a href="#">Homes</a>
+      </li>
+      <li>
+        <a href="#">Apartment</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="listing-view.php">Rent</a>
+  </li>
+
+  <li>
+    <a href="builders.php">Builders</a>
+  </li>
+
+  <li>
+    <a href="agents.php">Agents</a>
+  </li>
+
+  <li class="d-lg-none">
+    <a class="btn v1" href="add-listing.php">
+      Add Listing
+      <i class="ion-plus-round"></i>
+    </a>
+  </li>
+              {{#if sessionData}}
+              {{else}}
+                {{>index/_login-signup-btn}}
+              {{/if}}
+</ul>

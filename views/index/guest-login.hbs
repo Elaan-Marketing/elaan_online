@@ -1,0 +1,101 @@
+<div class="page-wrapper">
+
+  <!--User Login section starts-->
+  <div class="user-login-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1 text-center">
+          <div class="login-wrapper">
+            <ul
+              class="ui-list nav nav-tabs justify-content-center mar-bot-30"
+              role="tablist"
+            >
+              <li class="nav-item login-item">
+                <a
+                  class="nav-link login-link"
+                  href="login"
+                  role="tab"
+                  aria-selected="flase"
+                >Login</a>
+              </li>
+              <li class="nav-item register-item">
+                <a
+                  class="nav-link register-link"
+                  href="signup"
+                  role="tab"
+                  aria-selected="false"
+                >Signup</a>
+              </li>
+            </ul>
+            <p><b>Guest Login</b></p>
+            <br>
+            <div class="ui-dash tab-content">
+              <div
+                class="tab-pane login-pane fade show active"
+                id="login"
+                role="tabpanel"
+              >
+                {{>index/_message}}
+                <form id="login-form" action="/guestlogin" method="post">
+
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      id="username"
+                      tabindex="1"
+                      class="form-control"
+                      placeholder="Name"
+                      value="{{#if name}}{{name}}{{else}}{{/if}}"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="number"
+                      name="phone"
+                      id="username"
+                      tabindex="1"
+                      class="form-control"
+                      placeholder="Mobile Number"
+                      value="{{#if phone}}{{phone}}{{else}}{{/if}}"
+                      required
+                    />
+                  </div>
+                  <div class="row mar-top-20">
+                    <div class="col-md-6 col-12 text-left">
+                      <div class="res-box">
+                        <input
+                          type="checkbox"
+                          tabindex="3"
+                          class=""
+                          name="remember"
+                          id="remember"
+                        />
+                        <label for="remember">Remember Me</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12 text-right">
+                      <div class="res-box sm-left">
+                        <a href="login" tabindex="5" class="forgot-password"><b>Profile Login</b></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="res-box text-center mar-top-30">
+                    <button type="submit" class="btn v3"><i
+                        class="ion-log-in"
+                      ></i>
+                      Send OTP</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--User login section ends-->
+  <!--Login section ends-->
+</div>
+<!--Page Wrapper ends-->

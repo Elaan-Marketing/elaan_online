@@ -1,0 +1,114 @@
+<div class="page-wrapper">
+
+  <!--User Login section starts-->
+  <div class="user-login-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1 text-center">
+          <div class="login-wrapper">
+            <ul
+              class="ui-list nav nav-tabs justify-content-center mar-bot-30"
+              role="tablist"
+            >
+              <li class="nav-item login-item">
+                <a
+                  class="nav-link login-link"
+                  href="login"
+                  role="tab"
+                  aria-selected="false"
+                >Login</a>
+              </li>
+              <li class="nav-item register-item">
+                <a
+                  class="nav-link register-link active"
+                  href="signup"
+                  role="tab"
+                  aria-selected="true"
+                >Signup</a>
+              </li>
+            </ul>
+            <div class="ui-dash tab-content">
+              <div
+                class="tab-pane register-pane fade show active"
+                id="register"
+                role="tabpanel"
+              >
+                {{>index/_message}}
+                <form id="register-form" action="/signup" method="post">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      id="user_name"
+                      tabindex="2"
+                      class="form-control"
+                      placeholder="Username"
+                      required
+                      value="{{#if name}}{{name}}{{else}}{{/if}}"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="number"
+                      name="phone"
+                      id="email"
+                      tabindex="1"
+                      class="form-control"
+                      placeholder="Mobile NUmber"
+                      required
+                      value="{{#if phone}}{{phone}}{{else}}{{/if}}"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      name="password"
+                      id="user_password"
+                      tabindex="2"
+                      class="form-control"
+                      placeholder="Password"
+                      required
+                      value="{{#if password}}{{password}}{{else}}{{/if}}"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      name="password2"
+                      id="confirm-password"
+                      tabindex="2"
+                      class="form-control"
+                      placeholder="Confirm Password"
+                      required
+                      value="{{#if password2}}{{password2}}{{else}}{{/if}}"
+                    />
+                  </div>
+                  <div class="res-box text-left">
+                    <input
+                      type="checkbox"
+                      tabindex="3"
+                      class=""
+                      name="remember"
+                      id="remember"
+                      required
+                    />
+                    <label for="remember">I've read and accept terms &amp;
+                      conditions</label>
+                  </div>
+                  <div class="res-box text-center mar-top-30">
+                    <button type="submit" class="btn v3"><i
+                        class="ion-android-checkmark-circle"
+                      ></i>Sign Up</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--User login section ends-->
+  <!--Login section ends-->
+</div>
+<!--Page Wrapper ends-->

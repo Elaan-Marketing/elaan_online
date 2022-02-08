@@ -1,0 +1,13 @@
+  {{#if errors}}
+    {{#each errors}}
+      <h4 style="color: red;">{{msg}}</h4>
+    {{/each}}
+  {{/if}}
+  
+  {{#if successMsg}}
+    <h4 style="color: rgb(0, 165, 55);">{{successMsg}}</h4>
+  {{/if}}
+  
+  {{#if error}}
+    <h4 style="color: red;">{{error}}</h4>
+  {{/if}}

@@ -1,0 +1,25 @@
+{
+  "name": "elaan_online",
+  "version": "1.0.0",
+  "description": "Elaan Online Portal",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "express-session": "^1.17.1",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.19",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.7"
+  }
+}
